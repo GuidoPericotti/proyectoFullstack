@@ -62,7 +62,7 @@ li:hover{
 
 /* Main*/
 .item-portada {
-    background-image: url(/img/Index/mudanza_familia_felicidad.jpg);
+    background-image: url(../img/Index/mudanza_familia_felicidad.jpg);
     background-size: 100%;
     background-size: cover;
     background-position: center center;
@@ -132,7 +132,7 @@ li:hover{
 
 /*Aside*/
 .item-aside1{
-    background-image: url(/img/Index/AsideCodoaCodoVertical.png);
+    background-image: url(../img/Index/AsideCodoaCodoVertical.png);
     background-size: 100%;
     background-size: cover;
     background-position: center center;
