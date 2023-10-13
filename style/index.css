@@ -80,8 +80,8 @@ li:hover{
     text-shadow: 1px 1px 10px;
 }
 .comenzar{
-    background-color: #9aebd0;
-    border: 2px solid #9aebd0;
+    background-color: #74706b;
+    border: 2px solid #74706b;
     color: #000;
     width: 15%;
     padding: 10px;
@@ -94,7 +94,7 @@ li:hover{
 
     }
 .comenzar:hover{
-    background-color: #ffc172;
+    background-color: #504f4f;
     border: 2px solid #000;
 }
 
@@ -217,5 +217,69 @@ cursor: pointer;
         }
     .item-aside1{
         display: none;
+    }
+    .imgHB {
+        display: flex;
+        width: 5rem;
+        margin-top: 5%;
+    }
+    .flex-containerHeader {
+        flex-flow: column nowrap;
+    }
+    .imgHB {
+        padding: 1%;
+    }
+    .flex-containerHeader>h1 {
+        display: none;
+    }
+    .nav-display {
+        flex-flow: column nowrap;
+        margin-top: 10%;
+    }
+    .flex-main {
+        flex-flow: column nowrap;
+    }
+
+    /*Footer*/
+    .flex-footer {
+        flex-flow: column nowrap;
+        padding: 0.5rem;
+    }
+    .redes {
+        width: auto;
+    }
+    .redes > div{
+        margin: 1rem;
+    }
+
+    /*Suscripcion*/
+    .suscripcion{
+        width: auto;
+    }
+    .correo{
+        width: 50%;
+    }
+    .suscribirse{
+    width: 40%;
+    }
+
+    .flex-cont1{
+        font-size: 1.3rem;
+        padding-top: 5rem;
+        padding-left: 2.5rem;
+    }
+    .comenzar{
+        background-color: #74706b;
+        border: 2px solid #74706b;
+        width: 15%;
+        margin: 15% 15%;  
+        font-size: .8rem;  
+        }
+    .comenzar:hover{
+        background-color: #504f4f;
+    }
+    .imgsection{
+        width: 12vw;
+        border-radius: 35px;
     }
 }
