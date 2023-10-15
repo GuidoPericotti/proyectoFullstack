@@ -22,53 +22,53 @@
         <fieldset class="fieldset">
             <form name=formulario class="formulario" action="https://formspree.io/f/mwkdwqnn" onsubmit="return validar()"
             method="POST"> 
-                <h2>Completá el siguiente formulario y te responderemos a la brevedad</h2>
-                <br> 
-                <label for="nom">Nombre</label>
-                <input type="text" name="nombre" id="nom" size="20" required placeholder="Juan...">
+            <h2>Completá el siguiente formulario y te responderemos a la brevedad</h2>
+            <br> 
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre" id="nom" size="20" required placeholder="Juan...">
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" size="20" required placeholder="Gómez...">
+            <br>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="Email" required size="20" placeholder="bookyourhome@example.com">
+            <br>
+            <div>
+                <label for="país">País de origen</label>
+                <select name="país" id="país" required>
+                    <option value="1">Argentina</option>
+                    <option value="2">Uruguay</option>
+                    <option value="3">Paraguay</option>
+                    <option value="4">Chile</option>
+                    <option value="5">Brasil</option>
+                    <option value="6">Bolivia</option>
+                </select>
+            </div>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+                placeholder="Dejanos tu consulta...">
+            </textarea>
+            <br>
+            <div>
+                <input type="checkbox" name="recibir_novedades" id="recibir_novedades">
+                <label for="recibir_novedades">Me gustaría recibir novedades y promociones</label>
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit"  value="Enviar datos" onclick="validar()">
                 <br>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" size="20" required placeholder="Gómez...">
-                <br>
-                <label for="Email">Email</label>
-                <input type="email" name="email" id="Email" required size="20" placeholder="bookyourhome@example.com">
-                <br>
-                <div>
-                    <label for="país">País de origen</label>
-                    <select name="país" id="país" required>
-                        <option value="1">Argentina</option>
-                        <option value="2">Uruguay</option>
-                        <option value="3">Paraguay</option>
-                        <option value="4">Chile</option>
-                        <option value="5">Brasil</option>
-                        <option value="6">Bolivia</option>
-                    </select>
-                </div>
-                <br>
-                <textarea name="comentarios" id="comentarios" cols="30" rows="10"
-                    placeholder="Dejanos tu consulta..."></textarea>
-                <br>
-                <div>
-                    <input type="checkbox" name="recibir_novedades" id="recibir_novedades">
-                    <label for="recibir_novedades">Me gustaría recibir novedades y promociones</label>
-                </div>
-                <br>
-                <div class="submit">
-                    <input type="submit"  value="Enviar datos" onclick="validar()">
-                    <br>
-                    <input type="reset" value="Limpiar datos">
-                </div>
-            </form>
-        </fieldset>
+                <input type="reset" value="Limpiar datos">
+            </div>
+        </form>
+    </fieldset>
+</main>
 
-    </main>
+<footer id="idFooter">
 
-    <footer id="idFooter">
+</footer>
 
-    </footer>
-
-    <script src="js/script.js"></script>
-    <script src="validarformcontacto.js"> </script>
+<script src="js/script.js"></script>
+<script src="js/validarformcontacto.js"> </script>
 
 </body>
 

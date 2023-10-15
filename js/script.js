@@ -36,7 +36,7 @@ cad = `
         <h2>Suscribete al newsletter</h2>
         <br>
         <div class="suscripcion-input">
-            <input class="correo" type="text" name="email" placeholder="contacto@bookyourhome.com.ar"
+            <input class="correo" type="text" name="email" placeholder="contacto@bookyourhome.com"
                 value="">
             <input class="suscribirse" type="submit" value="Suscribirme">
         </div>
