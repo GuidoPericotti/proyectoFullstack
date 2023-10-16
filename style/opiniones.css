@@ -94,7 +94,9 @@ li:hover{
     display: flex;
     flex-flow: row nowrap;
     margin: 1% 10%;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #333333e0;
 }
 
 .flex-container2 > p {
