@@ -90,13 +90,19 @@ li:hover{
     grid-gap: 0;
 }
 
-.flex-container2 {
+.flex-main {
     display: flex;
     flex-flow: row nowrap;
-    margin: 1% 10%;
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #333333e0;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #3333331f;
+    border-radius: 10px;
+    flex: 20%;
 }
 
 .flex-container2 > div {
@@ -104,29 +110,25 @@ li:hover{
     text-align: left;
     font-size: 1.4rem;
     font-weight: 100;
-    flex: auto;
 }
+
 .card {
-    width: 0.4rem;
+    display: flex;
+    align-content: center;
+    gap: 1rem;
 }
 
 .card > p {
-    text-align: center;
-    font-size: 1rem;
-    padding: 0;
-
+    align-self: center;
+}
+.imagen {
+    border-radius: 40px;
 }
 
 .card2 {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-}
-
-#imagen1 {
-    border-radius: 40px;
-    flex: auto;
-    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .line {
@@ -214,6 +216,10 @@ textarea {
 }
 .correo{
     width: 50%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .suscribirse{
 width: 40%;
@@ -235,10 +241,22 @@ cursor: pointer;
 /*Media queries*/
 /* Small devices (600px) */
 @media only screen and (max-width: 600px){
+    .item-aside2 {
+        background-image: url(/img/Index/codo_a_codo_horizontal.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: 20vw;
+        }
+    .item-aside1{
+        display: none;
+    }
     .imgHB {
         display: flex;
         width: 5rem;
-        margin-top: 5%;
     }
     .flex-containerHeader {
         flex-flow: column nowrap;
@@ -251,10 +269,12 @@ cursor: pointer;
     }
     .nav-display {
         flex-flow: column nowrap;
-        margin-top: 10%;
     }
     .flex-main {
         flex-flow: column nowrap;
+    }
+    .nav-item {
+        padding: 1%;
     }
 
     /*Footer*/
