@@ -99,11 +99,34 @@ li:hover{
     border: 1px solid #333333e0;
 }
 
-.flex-container2 > p {
-    padding: 1rem 4rem;
+.flex-container2 > div {
+    padding: 1rem 2rem;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 100;
+    flex: auto;
+}
+.card {
+    width: 0.4rem;
+}
+
+.card > p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+
+}
+
+.card2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+#imagen1 {
+    border-radius: 40px;
+    flex: auto;
+    margin-bottom: 1rem;
 }
 
 .line {

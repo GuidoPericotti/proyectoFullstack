@@ -20,21 +20,38 @@ fetch("/js/comentarios.json")
     })
 //Solicitud de comentarios
 fetch("/js/comentarios.json")
-.then(response => response.json())
-.then(data => {
-    const nuevoComentario = data.comentarios[0].comentario;
-    const comentario = document.getElementById("comentario1");
-    comentario.innerText = nuevoComentario;
+    .then(response => response.json())
+    .then(data => {
+        const nuevoComentario = data.comentarios[0].comentario;
+        const comentario = document.getElementById("comentario1");
+        comentario.innerText = nuevoComentario;
 
-    const nuevoComentario2 = data.comentarios[1].comentario;
-    const comentario2 = document.getElementById("comentario2");
-    comentario2.innerText = nuevoComentario2;
+        const nuevoComentario2 = data.comentarios[1].comentario;
+        const comentario2 = document.getElementById("comentario2");
+        comentario2.innerText = nuevoComentario2;
 
-    const nuevoComentario3 = data.comentarios[2].comentario;
-    const comentario3 = document.getElementById("comentario3");
-    comentario3.innerText = nuevoComentario3;
+        const nuevoComentario3 = data.comentarios[2].comentario;
+        const comentario3 = document.getElementById("comentario3");
+        comentario3.innerText = nuevoComentario3;
 
-    const nuevoComentario4 = data.comentarios[3].comentario;
-    const comentario4 = document.getElementById("comentario4");
-    comentario4.innerText = nuevoComentario4;
+        const nuevoComentario4 = data.comentarios[3].comentario;
+        const comentario4 = document.getElementById("comentario4");
+        comentario4.innerText = nuevoComentario4;
 })
+
+const generarUsuario = async () => {
+    const url = "https://randomuser.me/api/";
+    const respuesta = await fetch(url);
+    const {results} = await respuesta.json();
+    const datos = results[0];
+
+    const nuevaImagen1 = datos.picture.thumbnail;
+    const imagen1 = document.getElementById("imagen1");
+    imagen1.setAttribute("src", nuevaImagen1);
+
+    const nuevoNombre1 = datos.name.first +" "+ datos.name.last;
+    const nombre1 = document.getElementById("nombre1");
+    nombre1.innerText = nuevoNombre1;
+}
+
+generarUsuario();
