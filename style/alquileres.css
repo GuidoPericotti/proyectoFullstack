@@ -235,19 +235,6 @@ cursor: pointer;
 /*Media queries*/
 /* Small devices (600px) */
 @media only screen and (max-width: 600px){
-    .item-aside2 {
-        background-image: url(/img/Index/codo_a_codo_horizontal.jpg);
-        background-size: 100%;
-        background-size: cover;
-        background-position: center center;
-        display: flex;
-        flex-flow: column nowrap;
-        width: 100%;
-        height: 20vw;
-        }
-    .item-aside1{
-        display: none;
-    }
     .imgHB {
         display: flex;
         width: 5rem;

@@ -171,12 +171,58 @@ cursor: pointer;
     text-align: center;
     padding: 1rem;
 }
-@media only screen and (max-width: 800px) {
+
+/*Media queries*/
+/* Small devices (600px) */
+@media only screen and (max-width: 600px){
     .imgHB {
         display: flex;
         width: 5rem;
-        margin-top: 5%;
     }
+    .flex-containerHeader {
+        flex-flow: column nowrap;
+    }
+    .imgHB {
+        padding: 1%;
+    }
+    .flex-containerHeader>h1 {
+        display: none;
+    }
+    .nav-display {
+        flex-flow: column nowrap;
+    }
+    .flex-main {
+        flex-flow: column nowrap;
+    }
+    .nav-item {
+        padding: 1%;
+    }
+
+    /*Footer*/
+    .flex-footer {
+        flex-flow: column nowrap;
+        padding: 0.5rem;
+    }
+    .redes {
+        width: auto;
+    }
+    .redes > div{
+        margin: 1rem;
+    }
+
+    /*Suscripcion*/
+    .suscripcion{
+        width: auto;
+    }
+    .correo{
+        width: 50%;
+    }
+    .suscribirse{
+    width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .img-foto{
         display: none;
     }
@@ -190,25 +236,5 @@ cursor: pointer;
     }
     p{
         font-size: 2.55vw;
-    }
-}
-@media only screen and (min-width: 768px){
-    .flex-main {
-        flex-flow: row wrap;
-    }
-
-    .flex-card {
-        flex: 40%;
-    }
-}
-
-/* Large devices (992px) */
-@media only screen and (min-width: 992px) {
-    .flex-main {
-        flex-flow: row wrap;
-    }
-
-    .flex-card {
-        flex: 20%;
     }
 }
