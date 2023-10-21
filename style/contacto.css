@@ -70,6 +70,9 @@ li:hover {
 /*Main*/
 .fieldset {
     border-radius: 20px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 3px;
     background-color: #f2f2f2;
     padding: 5%;
     margin: 2% 20%;
@@ -104,6 +107,30 @@ textarea {
 .submit > input:hover {
     background-color: #9aebd0;
     color: black;
+}
+.ubicacion{
+    border-style: solid;
+    border-color:  #333;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 2% 20%;
+    align-items: center;
+
+}
+.ubicacion > iframe{
+    justify-content: center;
+    padding: 20px;
+    width: 40%;
+    height: 250px;
+    border-radius: 30px;
+}
+.ubicacion > div{
+    font-size: 2.5vw;
+
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 
@@ -145,6 +172,7 @@ textarea {
 
 .correo {
     width: 50%;
+    margin: 2%;
     padding: 0.5rem;
     border: none;
     border-radius: 4px;
@@ -152,7 +180,8 @@ textarea {
 }
 
 .suscribirse {
-    width: 40%;
+    width: 50%;
+    margin: 2%;
     padding: 0.5rem;
     border: none;
     border-radius: 4px;
@@ -224,5 +253,19 @@ textarea {
         background-color: #f2f2f2;
         padding: 5%;
         margin: 2% 5%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .ubicacion{
+        margin: 0% 0%;
+        border-radius: 0;
+        border: none;
+    }
+    .ubicacion > iframe{
+        width: 50%;
+    }
+    .ubicacion > div{
+        font-size: 3.2vw;
     }
 }

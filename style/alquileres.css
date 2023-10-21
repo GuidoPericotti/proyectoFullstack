@@ -23,7 +23,7 @@
     width: 5rem;
     padding: 2%;
 }
-.flex-containerHeader>h1 {   
+.flex-containerHeader > h1 {   
     font-size: 4vw;
     justify-content: center;
     font-weight: 700;
@@ -51,13 +51,15 @@ li .nav-item {
     text-decoration: none;
 }
 
-.li-item > a:hover {
+li > a:hover {
     background-color: #fff;
     color: #000;
 }
-.li-item:hover{
+li:hover{
     background-color: #fff;
 }
+
+
 /*Main*/
 .h2 {
     font-size: 2rem;
@@ -148,6 +150,7 @@ li .nav-item {
 .submit{
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 .submit > input {
     width: 100%;
@@ -161,7 +164,9 @@ li .nav-item {
 .submit > input:hover {
     background-color: #9aebd0;
     color: black;
+    cursor: pointer;
 }
+
 @keyframes slide {
     0% {margin-left: 0%;}
     20% {margin-left: 0%;}
@@ -208,19 +213,22 @@ li .nav-item {
     display: flex;
     justify-content: space-between;
 }
-.correo{
+.correo {
     width: 50%;
+    margin: 2%;
     padding: 0.5rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-.suscribirse{
-width: 40%;
-padding: 0.5rem;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+
+.suscribirse {
+    width: 50%;
+    margin: 2%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .suscribirse:hover{
     background-color: #63caa7;
