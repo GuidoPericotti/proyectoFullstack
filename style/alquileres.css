@@ -246,12 +246,10 @@ li > a:hover {
     .imgHB {
         display: flex;
         width: 5rem;
+        padding: 1%;
     }
     .flex-containerHeader {
         flex-flow: column nowrap;
-    }
-    .imgHB {
-        padding: 1%;
     }
     .flex-containerHeader>h1 {
         display: none;

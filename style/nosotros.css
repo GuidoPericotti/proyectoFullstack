@@ -164,6 +164,7 @@ p{
     .imgHB {
         display: flex;
         width: 5rem;
+        padding: 1%;
     }
     .flex-containerHeader {
         flex-flow: column nowrap;
