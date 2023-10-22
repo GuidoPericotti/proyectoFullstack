@@ -66,7 +66,7 @@ li:hover{
 }
 
 .item-h1 {
-    background-image: url(/img/Opiniones/fondo-h1-opiniones.jpg);
+    background-image: url(../img/Opiniones/fondo-h1-opiniones.jpg);
     background-size: 100%;
     background-size: cover;
     background-position: center;

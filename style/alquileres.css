@@ -55,7 +55,7 @@ li > a:hover {
     background-color: #fff;
     color: #000;
 }
-li:hover{
+.nav-item:hover{
     background-color: #fff;
 }
 

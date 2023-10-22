@@ -108,6 +108,7 @@ textarea {
     background-color: #9aebd0;
     color: black;
 }
+
 .ubicacion{
     border-style: solid;
     border-color:  #333;
@@ -117,7 +118,6 @@ textarea {
     flex-flow: row nowrap;
     margin: 2% 20%;
     align-items: center;
-
 }
 .ubicacion > iframe{
     justify-content: center;
@@ -128,7 +128,6 @@ textarea {
 }
 .ubicacion > div{
     font-size: 2.5vw;
-
     margin-right: 10%;
     margin-left: 5%;
 }
@@ -202,6 +201,10 @@ textarea {
 /*Media queries*/
 /* Small devices (600px) */
 @media only screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
     .imgHB {
         display: flex;
         width: 5rem;

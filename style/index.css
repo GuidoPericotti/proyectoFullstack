@@ -212,7 +212,7 @@ li:hover{
 /* Small devices (600px and up) */
 @media only screen and (max-width: 600px) {
     .item-aside2 {
-        background-image: url(/img/Index/codo_a_codo_horizontal.jpg);
+        background-image: url(../img/Index/codo_a_codo_horizontal.jpg);
         background-size: 100%;
         background-size: cover;
         background-position: center center;
