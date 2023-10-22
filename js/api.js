@@ -1,5 +1,5 @@
 //Solicitud de calificaciones
-fetch("/js/comentarios.json")
+fetch("js/comentarios.json")
     .then(response => response.json())
     .then(data => {
         const nuevaCalificacion = data.comentarios[0].calificacion;
@@ -19,7 +19,7 @@ fetch("/js/comentarios.json")
         calificacion4.innerText = `Calificación: ${nuevaCalificacion4}`;
     })
 //Solicitud de comentarios
-fetch("/js/comentarios.json")
+fetch("js/comentarios.json")
     .then(response => response.json())
     .then(data => {
         const nuevoComentario = data.comentarios[0].comentario;
